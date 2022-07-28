@@ -1,0 +1,90 @@
+.vh-combobox {
+    height: 40px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    /* min-width: 100px; */
+    outline: unset;
+    cursor: pointer;
+    
+}
+
+.vh-combobox.vh-combobox-w100 {
+    width: 100%;
+}
+
+.vh-combobox:focus {
+    border-color: #019160;
+}
+
+.vh-combobox.vh-combobox-noborder {
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vhcombobox {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.vhcombobox .vh-combobox-input {
+    width: 100%;
+    border-radius: 4px;
+    padding: 0 56px 0 16px;
+}
+
+.vhcombobox input:focus~button {
+    border-color: #019160;
+    color: #019160;
+}
+
+.vhcombobox .vh-combobox-button {
+    outline: none;
+    width: 39px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    border: 0;
+    border-left: 1px solid #bbb;
+    border-radius: 0 4px 4px 0;
+}
+
+.vhcombobox .vh-combobox-button:hover {
+    background-color: #e9ebee;
+}
+
+.vhcombobox .vh-combobox-button:active {
+    background-color: #e5e5e5;
+}
+
+.vhcombobox .vh-combobox-data {
+    position: absolute;
+    width: 100%;
+    top: calc(100% + 1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    display: none;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.vhcombobox .vh-combobox-item {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 34px;
+}
+
+.vhcombobox .vh-combobox-item:hover,
+.vh-combobox-item-hover {
+    background-color: #bbb;
+    cursor: pointer;
+}

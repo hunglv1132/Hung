@@ -1,0 +1,39 @@
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.page-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.page-toolbar-right {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Grid */
+
+.t-grid {
+    flex: 1;
+    margin-bottom: 56px;
+    overflow: auto;
+}
+
+.t-paging {
+    width: unset;
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 0;
+}

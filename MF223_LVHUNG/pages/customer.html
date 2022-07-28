@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý nhân viên - CUKCUK.vn</title>
+    <link rel="stylesheet" href="./assets/font/fontawesome-5.15.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/layout/content.css" />
+    <link rel="stylesheet" href="../css/layout/header.css" />
+    <link rel="stylesheet" href="../css/layout/navbar.css" />
+    <link rel="stylesheet" href="../css/page/employee.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <div class="vh-header">
+        <div class="vh-place">
+            <div class="vh-combobox vh-combobox-noborder" name="" id="">
+                    Nhà hàng Biển đông
+                </div>
+        </div>
+        <div class="vh-user">
+            <div class="vh-user-avatar"></div>
+            <div class="vh-user-name">Lê Việt Hưng</div>
+            <div class="vh-user-more"></div>
+        </div>
+    </div>
+    <div class="vh-navbar">
+        <div class="vh-logo-box">
+            <div class="vh-toggle"></div>
+            <div class="vh-logo-page"></div>
+        </div>
+        <div class="vh-navbar-box">
+            <div class="vh-menu-item">
+                <div class="vh-menu-item-icon vh-icon icon-dashboard"></div>
+                <div class="vh-menu-item-text">Tổng quan</div>
+            </div>
+            <div class="vh-menu-item">
+                <div class="vh-menu-item-icon vh-icon icon-report"></div>
+                <div class="vh-menu-item-text">Báo cáo</div>
+            </div>
+            <div class="vh-menu-item">
+                <div class="vh-menu-item-icon vh-icon icon-dashboard"></div>
+                <div class="vh-menu-item-text">Mua hàng</div>
+            </div>
+            <a class="vh-menu-item" href="employee.html">
+                <div class="vh-menu-item-icon vh-icon icon-customer"></div>
+                <div class="vh-menu-item-text">Danh mục nhân viên</div>
+            </a>
+            <a class="vh-menu-item vh-menu-item-active" href="customer.html ">
+                <div class="vh-menu-item-icon vh-icon icon-customer "></div>
+                <div class="vh-menu-item-text ">Danh mục khách hàng</div>
+            </a>
+            <div class="vh-menu-item ">
+                <div class="vh-menu-item-icon vh-icon icon-setting "></div>
+                <div class="vh-menu-item-text ">Thiết lập hệ thống</div>
+            </div>
+        </div>
+    </div>
+    <div class="vh-content ">
+        <div class="page-header ">
+            <div class="page-header-title ">Danh sách khách hàng</div>
+            
+        </div>
+        <div class="page-toolbar ">
+            <div class="page-toolbar-left ">
+                <input id="txtSearch" type="text" placeholder="Tìm kiếm thông tin " class="vh-input vh-input-search " style="width: unset " />
+            </div>
+            <div class="page-toolbar-right">
+                <div class="btn-box">
+                    <button class="btn  delete-btn" disabled></button>
+                    <button class="btn  replication-btn" disabled></button>
+                    <button class="btn  refresh-btn"></button>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="vh-grid ">
+            <table id="tblCustomer" class="vh-table" border="1" entityId="CustomerId">
+                <thead>
+                    <tr>
+                        <th class="text-align-left" style="width: 120px" fieldValue="CustomerCode">
+                            Mã khách hàng
+                        </th>
+                        <th class="text-align-left" style="width: 250px" fieldValue="FullName">Họ và tên</th>
+                        <th class="text-align-left" style="width: 80px" fieldValue="Gender">
+                            Giới tính
+                        </th>
+                        <th class="text-align-center" style="width: 150px" fieldValue="DateOfBirth" formatType="date">
+                            Ngày sinh
+                        </th>
+                        <th class="text-align-left" style="width: 100px" fieldValue="PhoneNumber">
+                            Điện thoại
+                        </th>
+                        <th class="text-align-left" style="width: 200px" fieldValue="Email">
+                            Email
+                        </th>
+                        <th class="text-align-left" fieldValue="Address">
+                            Địa chỉ
+                        </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="vh-table-paging vh-paging ">
+                <div class="vh-paging-left ">Hiển thị 1-10/100 nhân viên</div>
+                <div class="vh-paging-center ">
+                    <div class="vh-paging-first "></div>
+                    <div class="vh-paging-prev "></div>
+                    <div class="vh-paging-number ">
+                        <div class="page-number page-numer--selected ">
+                            1
+                        </div>
+                        <div class="page-number ">2</div>
+                        <div class="page-number ">3</div>
+                        <div class="page-number ">4</div>
+                    </div>
+                    <div class="vh-paging-next "></div>
+                    <div class="vh-paging-last "></div>
+                </div>
+                <div class="vh-paging-right ">
+                    <select id="cbPageSize" class="vh-combobox " name=" ">
+                            <option value="10">10 nhân viên trên trang</option>
+                            <option value="20">20 nhân viên trên trang</option>
+                            <option value="30">30 nhân viên trên trang</option>
+                            <option value="40">40 nhân viên trên trang</option>
+                        </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dlgPopup " class="vh-popup-modal ">
+        <div class="vh-popup vh-popup-auto-width ">
+            <div class="vh-popup-header ">
+                <div class="vh-popup-header-title ">
+                    Đóng Form thông tin chung
+                </div>
+                <div id="btnCloseDialog " class="vh-popup-close ">
+                    <i class="fas fa-times "></i>
+                </div>
+            </div>
+            <div class="vh-popup-content ">
+                <div>
+                    <div class="vh-row vh-row-flex ">
+                        <div class="vh-col vh-col-w50 ">
+                            <div class="vh-label ">Mã nhân viên</div>
+                            <input class="vh-input " type="text " id="txtEmployeeCode " fieldName="EmployeeCode " />
+                        </div>
+                        <div class="vh-col vh-col-w50 ">
+                            <div class="vh-label ">Họ và tên</div>
+                            <input class="vh-input " type="text " id="txtFullName " fieldName="FullName " />
+                        </div>
+                    </div>
+                    <div class="vh-row vh-row-flex ">
+                        <div class="vh-col vh-col-w50 ">
+                            <div class="vh-label ">Ngày sinh</div>
+                            <input class="vh-input " type="date " id="dateOfBirth " fieldName="DateOfBirth " />
+                        </div>
+                        <div class="vh-col vh-col-w50 ">
+                            <div class="vh-label ">Giới tính</div>
+                            <!-- <div id="cbGender " class="vhcombobox ">
+                                <input type="text " class="vh-combobox vh-combobox-input " />
+                                <button tabindex="-1 " class="vh-combobox-button ">
+                                        <i class="fas fa-chevron-down "></i>
+                                    </button>
+                                <div class="vh-combobox-data ">
+                                    <div class="vh-combobox-item " value="1 ">Nam</div>
+                                    <div class="vh-combobox-item " value="0 ">Nữ</div>
+                                </div>
+                            </div> -->
+                            <combobox id="cbGender " fieldName="Gender ">
+                                <item value="1 ">Nam</item>
+                                <item value="0 ">Nữ</item>
+                            </combobox>
+                        </div>
+                    </div>
+                    <div class="vh-row vh-row-flex ">
+                        <div class="vh-col vh-col-w50 ">
+                            <div class="vh-label ">Email</div>
+                            <input class="vh-input " type="email " id="txtEmail " fieldName="Email " />
+                        </div>
+                        <div class="vh-col vh-col-w50 ">
+                            <div class="vh-label ">Số điện thoại</div>
+                            <input class="vh-input " type="text " id="txtPhoneNumber " fieldName="PhoneNumber " />
+                        </div>
+                    </div>
+                    <div class="vh-row vh-row-flex ">
+                        <div class="vh-col vh-col-w100 ">
+                            <div class="vh-label ">Địa chỉ</div>
+                            <input class=vh-input " type="text " id="txtAddress " fieldName="Address " />
+                        </div>
+                    </div>
+                    <div class="vh-row vh-row-flex ">
+                        <div class="vh-col vh-col-w50 ">
+                            <div class="vh-label ">Phòng ban</div>
+                            <!-- <select class="vh-combobox vh-combobox-w100 " name=" " id="cbDepartment "></select> -->
+                            <combobox id="cbDepartment " api="http://cukcuk.manhnv.net/api/v1/Departments " propertyDisplay="DepartmentName " propertyValue="DepartmentId " fieldName="DepartmentId "></combobox>
+                            <!-- <div id="cbDepartment " class="tcombobox " api="http://cukcuk.manhnv.net/api/v1/Departments " propertyDisplay="DepartmentName " propertyValue="DepartmentId ">
+                                <input type="text " class="vh-combobox vh-combobox-input " />
+                                <button tabindex="-1 " class="vh-combobox-button ">
+                                        <i class="fas fa-chevron-down "></i>
+                                    </button>
+                                <div class="vh-combobox-data "></div>
+                            </div> -->
+                        </div>
+                        <div class="vh-col vh-col-w50 ">
+                            <div class="vh-label ">Mức lương cơ bản</div>
+                            <input class="vh-input " type="number " id="numSalary " fieldName="Salary " />
+                        </div>
+                    </div>
+                    <div class="vh-row vh-row-flex ">
+                        <div class="vh-col vh-col-w50 ">
+                            <div class="vh-label ">Vị trí</div>
+                            <combobox id="cbPosition " api="http://cukcuk.manhnv.net/api/v1/Positions " propertyDisplay="PositionName " propertyValue="PositionId " fieldName="PositionId "></combobox>
+                        </div>
+                        <div class="vh-col vh-col-w50 ">
+                            <div class="vh-label ">Ghi chú</div>
+                            <input class="vh-input " type="number " id="numSalary " fieldName="Salary " />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vh-popup-footer ">
+                <button id="btnSave " class="vh-button ">Lưu</button>
+                <button id="btnCancel " class="vh-button vh-button-nobackground ">
+                        Hủy
+                    </button>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="vh-loading " style="display: none; ">
+        <div class="vh-loading-icon "></div>
+    </div> -->
+
+    <!-- Toast message success -->
+    <div id="toastMsg " class="vh-toast-msg-container ">
+        <div class="vh-toast-msg " id="toastMsg ">
+            <div class="toast-msg-icon ">
+                <i class="fas fa-check-circle vh-toast-msg-success "></i>
+            </div>
+            <div class="toast-msg-text ">Thêm mới thành công</div>
+            <div class="toast-msg-close ">
+                <i class="fas fa-times vh-toast-msg-success "></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <!-- Thư viện js -->
+    <script src="../js/jquery-3.6.0.min.js "></script>
+    <!-- js dùng chung -->
+    <script src="../js/base/enum.js "></script>
+    <script src="../js/base/common.js "></script>
+    <script src="../lib/combobox/combobox.js "></script>
+    <!-- base -->
+    <script src="../js/base/base.js"></script>
+    <!-- js dùng riêng -->
+    <script src="../js/page/customer.js "></script>
+</body>
+
+</html>

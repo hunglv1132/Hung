@@ -1,0 +1,60 @@
+.vh-input {
+    height: 40px;
+    padding: 0 16px;
+    outline: unset;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.vh-input::placeholder {
+    font-size: 11px;
+    color: #bbb;
+}
+
+.vh-input:focus {
+    border-color: #019160;
+}
+
+.vh-input.input-error {
+    border-color: #ff4747;
+}
+
+input.vh-input-search {
+    background-image: url("../../assets/icon/search.png");
+    background-repeat: no-repeat;
+    background-position: 16px center;
+    background-size: 16px 16px;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+input.vh-input-search::placeholder {
+    font-size: 12px;
+}
+
+.vh-warning {
+    width: 144px;
+    height: 50px;
+}
+
+.vh-warning .vh-triangle {
+    transform: translateX(87px) translateY(-6px) rotate(45deg);
+    background-color: #ff4646;
+    width: 12px;
+    height: 12px;
+}
+
+.vh-warning .vh-rectangle {
+    background-color: #ff4646;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.vh-content-button {
+    width: 500px;
+    height: 20px;
+}

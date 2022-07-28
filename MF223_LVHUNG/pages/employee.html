@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý nhân viên - CUKCUK.vn</title>
+    <link rel="stylesheet" href="./assets/font/fontawesome-5.15.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/layout/content.css" />
+    <link rel="stylesheet" href="../css/layout/header.css" />
+    <link rel="stylesheet" href="../css/layout/navbar.css" />
+    <link rel="stylesheet" href="../css/page/employee.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <div class="vh-header">
+        <div class="vh-place">
+            <div class="vh-combobox vh-combobox-noborder" name="" id="">
+                    Nhà hàng Biển đông
+                </div>
+        </div>
+        <div class="vh-user">
+            <div class="vh-user-avatar"></div>
+            <div class="vh-user-name">Lê Việt Hưng</div>
+            <div class="vh-user-more"></div>
+        </div>
+    </div>
+    <div class="vh-navbar">
+        <div class="vh-logo-box">
+            <div class="vh-toggle"></div>
+            <div class="vh-logo-page"></div>
+        </div>
+        <div class="vh-navbar-box">
+            <div class="vh-menu-item">
+                <div class="vh-menu-item-icon vh-icon icon-dashboard"></div>
+                <div class="vh-menu-item-text">Tổng quan</div>
+            </div>
+            <div class="vh-menu-item">
+                <div class="vh-menu-item-icon vh-icon icon-report"></div>
+                <div class="vh-menu-item-text">Báo cáo</div>
+            </div>
+            <div class="vh-menu-item">
+                <div class="vh-menu-item-icon vh-icon icon-dashboard"></div>
+                <div class="vh-menu-item-text">Mua hàng</div>
+            </div>
+            <a class="vh-menu-item vh-menu-item-active" href="employee.html">
+                <div class="vh-menu-item-icon vh-icon icon-customer"></div>
+                <div class="vh-menu-item-text">Danh mục nhân viên</div>
+            </a>
+            <a class="vh-menu-item" href="customer.html">
+                <div class="vh-menu-item-icon vh-icon icon-customer"></div>
+                <div class="vh-menu-item-text">Danh mục khách hàng</div>
+            </a>
+            <div class="vh-menu-item">
+                <div class="vh-menu-item-icon vh-icon icon-setting"></div>
+                <div class="vh-menu-item-text">Thiết lập hệ thống</div>
+            </div>
+        </div>
+    </div>
+    <div class="vh-content">
+        <div class="page-header">
+            <div class="page-header-title">Danh sách nhân viên</div>
+            <button class="vh-button" id="btnAddEmployee">
+                    <div class="vh-button-icon vh-icon vh-icon-add-employee"></div>
+                    <div class="vh-button-text">Thêm nhân viên</div>
+                </button>
+        </div>
+        <div class="page-toolbar">
+            <div class="page-toolbar-left">
+                <input type="text" placeholder="Tìm kiếm thông tin" class="vh-input vh-input-search" id="txtSearch" style="width: unset" />
+                <select class="vh-combobox" name="" id="">
+                        <option value="10">Tất cả phòng ban</option>
+                        <option value="10">Phòng nhân sự</option>
+                        <option value="20">Phòng tài chính</option>
+                        <option value="30">Phòng kế toán</option>
+                    </select>
+                <select class="vh-combobox" name="" id="">
+                        <option value="10">Tất cả vị trí</option>
+                        <option value="10">Giám đốc</option>
+                        <option value="20">Lập trình viên</option>
+                        <option value="30">Nhân viên</option>
+                    </select>
+            </div>
+            <div class="page-toolbar-right">
+                <div class="btn-box">
+                    <button class="btn  delete-btn" disabled></button>
+                    <button class="btn  replication-btn" disabled></button>
+                    <button class="btn  refresh-btn"></button>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="vh-grid">
+            <table id="tblEmployee" class="vh-table" border="1">
+                <thead>
+                    <tr>
+                        <th class="text-align-left" style="width: 120px">
+                            Mã nhân viên
+                        </th>
+                        <th class="text-align-left">Họ và tên</th>
+                        <th class="text-align-left" style="width: 80px">
+                            Giới tính
+                        </th>
+                        <th class="text-align-center" style="width: 150px">
+                            Ngày sinh
+                        </th>
+                        <th class="text-align-left" style="width: 100px">
+                            Điện thoại
+                        </th>
+                        <th class="text-align-left" style="width: 200px">
+                            Email
+                        </th>
+                        <th class="text-align-left" style="width: 200px">
+                            Phòng ban
+                        </th>
+                        <th class="text-align-right" style="width: 150px">
+                            Mức lương cơ bản
+                        </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="vh-table-paging vh-paging">
+                <div class="vh-paging-left">Hiển thị 1-10/<span id="totalRecord"></span> nhân viên</div>
+                <div class="vh-paging-center">
+                    <div class="vh-paging-first"></div>
+                    <div class="vh-paging-prev"></div>
+                    <div class="vh-paging-number">
+                        <div class="page-number page-numer--selected">
+                            1
+                        </div>
+                        <div class="page-number">2</div>
+                        <div class="page-number">3</div>
+                        <div class="page-number">4</div>
+                    </div>
+                    <div class="vh-paging-next"></div>
+                    <div class="vh-paging-last"></div>
+                </div>
+                <div class="vh-paging-right">
+                    <select class="vh-combobox" name="" id="cbPageSize">
+                            <option value="10">10 nhân viên trên trang</option>
+                            <option value="20">20 nhân viên trên trang</option>
+                            <option value="30">30 nhân viên trên trang</option>
+                            <option value="40">40 nhân viên trên trang</option>
+                        </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dlgPopup" class="vh-popup-modal">
+        <div class="vh-popup vh-popup-auto-width">
+            <div class="vh-popup-header">
+                <div class="vh-popup-header-title">
+                    THÔNG TIN NHÂN VIÊN
+                </div>
+                <div id="btnCloseDialog" class="vh-popup-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="vh-popup-content">
+                <div>
+                    <h4>A. THÔNG TIN CHUNG<div id="line"></div></h4>
+                    <div class="vh-row vh-row-flex">
+                        
+                        <div class="vh-col vh-col-w50">
+                            <div class="vh-label">Mã nhân viên</div>
+                            <input class="vh-input" type="text" id="txtEmployeeCode" fieldName="EmployeeCode" />
+                        </div>
+                        <div class="vh-col vh-col-w50">
+                            <div class="vh-label">Họ và tên</div>
+                            <input class="vh-input" type="text" id="txtFullName" fieldName="FullName" />
+                        </div>
+                    </div>
+                    <div class="vh-row vh-row-flex">
+                        <div class="vh-col vh-col-w50">
+                            <div class="vh-label">Ngày sinh</div>
+                            <input class="vh-input" type="date" id="dateOfBirth" fieldName="DateOfBirth" />
+                        </div>
+                        <div class="vh-col vh-col-w50">
+                            <div class="vh-label">Giới tính</div>
+                            <!-- <div id="cbGender" class="vhcombobox">
+                                <input type="text" class="vh-combobox vh-combobox-input" />
+                                <button tabindex="-1" class="vh-combobox-button">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                <div class="vh-combobox-data">
+                                    <div class="vh-combobox-item" value="1">Nam</div>
+                                    <div class="vh-combobox-item" value="0">Nữ</div>
+                                </div>
+                            </div> -->
+                            <combobox id="cbGender" fieldName="Gender">
+                                <item value="1">Nam</item>
+                                <item value="0">Nữ</item>
+                            </combobox>
+                        </div>
+                    </div>
+
+                    <div class="vh-row vh-row-flex">
+                        
+                        <div class="vh-col vh-col-w50">
+                            <div class="vh-label">Số CMTND/Căn cước</div>
+                            <input class="vh-input" type="text" id="txtEmployeeID" fieldName="EmployeeID" />
+                        </div>
+                        <div class="vh-col vh-col-w50">
+                            <div class="vh-label">Ngày cấp phép</div>
+                            <input class="vh-input" type="date" id="BeginingDate" fieldName="BeginingDate" />
+                        </div>
+                    </div>
+                    
+                    <div class="vh-row vh-row-flex">
+                        <div class="vh-col vh-col-w50">
+                            <div class="vh-label">Nơi cấp</div>
+                            <input class="vh-input" type="text" id="txtAddress" fieldName="Address" />
+                        </div>
+                    </div>
+
+                    <div class="vh-row vh-row-flex">
+                        <div class="vh-col vh-col-w50">
+                            <div class="vh-label">Email</div>
+                            <input class="vh-input" type="email" id="txtEmail" fieldName="Email" />
+                        </div>
+                        <div class="vh-col vh-col-w50">
+                            <div class="vh-label">Số điện thoại</div>
+                            <input class="vh-input" type="text" id="txtPhoneNumber" fieldName="PhoneNumber" />
+                        </div>
+                    </div>
+
+
+                   
+
+                    <h4>B. THÔNG TIN CÔNG VIỆC <div id="line"></div></h4>
+                    <div class="vh-row vh-row-flex">
+                        <div class="vh-col vh-col-w50">
+                            <div class="vh-label">Vị trí</div>
+                            <input class="vh-input" type="text" id="txtPosition" fieldName="Position" />
+                        </div>
+                        <div class="vh-col vh-col-w50">
+                            <div class="vh-label">Phòng ban</div>
+                            <input class="vh-input" type="text" id="txtPhoneNumber" fieldName="PhoneNumber" />
+                        </div>
+                    </div>
+                    <div class="vh-row vh-row-flex">
+                        <div class="vh-col vh-col-w50">
+                            <div class="vh-label">Mã số thuế cá nhân</div>
+                            <input class="vh-input" type="email" id="txtEmail" fieldName="Email" />
+                        </div>
+                        <div class="vh-col vh-col-w50">
+                            <div class="vh-label">Mức lương cơ bản</div>
+                            <input class="vh-input" type="text" id="txtPhoneNumber" fieldName="PhoneNumber" />
+                        </div>
+                    </div>
+
+                    <div class="vh-row vh-row-flex">
+                        <div class="vh-col vh-col-w50">
+                            <div class="vh-label">Ngày cấp phép</div>
+                            <input class="vh-input" type="date" id="BeginingDate" fieldName="BeginingDate" />
+                        </div>
+
+                        <div class="vh-col vh-col-w50">
+                            <div class="vh-label">Số CMTND/Căn cước</div>
+                            <input class="vh-input" type="text" id="txtEmployeeID" fieldName="EmployeeID" />
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="vh-popup-footer">
+                <button id="btnSave" class="vh-button">Lưu</button>
+                <button id="btnCancel" class="vh-button vh-button-nobackground">
+                        Hủy
+                    </button>
+            </div>
+        </div>
+    </div>
+    <div class="vh-loading" style="display: none;">
+        <div class="vh-loading-icon"></div>
+    </div>
+
+    <!-- Toast message success -->
+    <div id="toastMsg" class="vh-toast-msg-container">
+        <div class="vh-toast-msg" id="toastMsg">
+            <div class="toast-msg-icon">
+                <i class="fas fa-check-circle vh-toast-msg-success"></i>
+            </div>
+            <div class="toast-msg-text">Thêm mới thành công</div>
+            <div class="toast-msg-close">
+                <i class="fas fa-times vh-toast-msg-success"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <!-- Thư viện js -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <!-- js dùng chung -->
+    <script src="../js/base/enum.js"></script>
+    <script src="../js/base/common.js"></script>
+    <script src="../lib/combobox/combobox.js"></script>
+    <!-- js dùng riêng -->
+    <script src="../js/page/employeeOOP.js"></script>
+</body>
+
+</html>

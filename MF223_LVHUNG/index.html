@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework</title>
+    <!-- Css -->
+    <!-- Lib -->
+    <!-- Common css -->
+    <!-- Specific css -->
+    <link rel="stylesheet" href="./assets/font/fontawesome-5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body style="min-height: 1000px">
+    Welcome to Cukcu
+    <div class="t-row">
+        <label for="" class="t-label">1. Button</label>
+        <div class="t-row">
+            <button class="t-button">Add employee</button>
+        </div>
+    </div>
+    <div class="t-row">
+        <label for="" class="t-label">2. Button Icon</label>
+        <div class="t-row">
+            <button class="t-button">
+          <div class="t-button-icon t-icon t-icon-add-employee"></div>
+          <div class="t-button-text">Add employee</div>
+        </button>
+        </div>
+    </div>
+    <div class="t-row">
+        <label for="" class="t-label">3. Button 2 Icons</label>
+        <div class="t-row t-row-flex">
+            <button class="t-button t-button-2-icon">
+          <div class="t-button-icon t-icon t-icon-add-employee"></div>
+          <div class="t-button-text">Add employee</div>
+        </button>
+            <div class="t-icon t-button-caret t-button-primary">
+                <i class="fas fa-angle-down"></i>
+            </div>
+        </div>
+    </div>
+    <div class="t-row">
+        <label for="" class="t-label">4. Second Button</label>
+        <div class="t-row t-row-flex">
+            <button class="t-button t-button-2nd">Nộp hồ sơ</button>
+        </div>
+    </div>
+    <div class="t-row">
+        <label for="" class="t-label">5. Field Input</label>
+        <div class="t-row">
+            <input type="text" placeholder="Nhập họ và tên" class="t-input" />
+        </div>
+    </div>
+    <div class="t-row">
+        <label for="" class="t-label">6. Field Input with Icon</label>
+        <div class="t-input-wrap">
+            <input type="text" placeholder="Tìm kiếm thông tin" class="t-input t-input-search" />
+        </div>
+    </div>
+    <!-- Làm cái message lỗi -->
+    <div class="t-row">
+        <label for="" class="t-label">7. Field Input with Icon(Error)</label>
+        <div class="t-row">
+            <div class="t-content-button">
+                <div class="t-warning">
+                    <div class="t-rectangle">
+                        Mật khẩu không được trùng với tài khoản
+                    </div>
+                    <div class="t-triangle"></div>
+                    <input type="text" placeholder="Nhập họ và tên" class="t-input t-input-icon input-error" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="t-row">
+        <label for="t-input" class="t-label">8. Table</label>
+        <table class="t-table" border="1">
+            <thead>
+                <tr>
+                    <th class="text-align-left" style="width: 100px">Mã nhân viên</th>
+                    <th class="text-align-left">Họ và tên</th>
+                    <th class="text-align-left" style="width: 50px">Giới tính</th>
+                    <th class="text-align-center" style="width: 100px">Ngày sinh</th>
+                    <th class="text-align-right" style="width: 150px">
+                        Mức lương cơ bản
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-align-left">LVH01</td>
+                    <td class="text-align-left">Lê Việt Hưng</td>
+                    <td class="text-align-left">Nam</td>
+                    <td class="text-align-center">16/10/2000</td>
+                    <td class="text-align-right">50.000.000</td>
+                </tr>
+                <tr>
+                    <td class="text-align-left">HMT02</td>
+                    <td class="text-align-left">Mr Tri</td>
+                    <td class="text-align-left">Nam</td>
+                    <td class="text-align-center">31/09/1999</td>
+                    <td class="text-align-right"></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left">LTQ01</td>
+                    <td class="text-align-left">Lưu Thục Quyên</td>
+                    <td class="text-align-left">Nữ</td>
+                    <td class="text-align-center">30/09/2004</td>
+                    <td class="text-align-right">10.000.000</td>
+                </tr>
+                <tr>
+                    <td class="text-align-left">LTTN01</td>
+                    <td class="text-align-left">Châu Bùi</td>
+                    <td class="text-align-left">Nữ</td>
+                    <td class="text-align-center">23/10/1994</td>
+                    <td class="text-align-right">100.000.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="t-row">
+        <label for="t-input" class="t-label">9. Table with paging</label>
+        <div class="t-grid">
+            <table class="t-table" border="1">
+                <thead>
+                    <tr>
+                        <th class="text-align-left" style="width: 100px">Mã nhân viên</th>
+                        <th class="text-align-left">Họ và tên</th>
+                        <th class="text-align-left" style="width: 50px">Giới tính</th>
+                        <th class="text-align-center" style="width: 100px">Ngày sinh</th>
+                        <th class="text-align-right" style="width: 150px">
+                            Mức lương cơ bản
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-align-left">LVH</td>
+                        <td class="text-align-left">Lê Việt Hưng</td>
+                        <td class="text-align-left">Nam</td>
+                        <td class="text-align-center">16/10/2000</td>
+                        <td class="text-align-right">50.000.000</td>
+                    </tr>
+                    <tr>
+                        <td class="text-align-left">HMT02</td>
+                        <td class="text-align-left">Mr Tri</td>
+                        <td class="text-align-left">Nam</td>
+                        <td class="text-align-center">31/09/1999</td>
+                        <td class="text-align-right"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-align-left">LTQ01</td>
+                        <td class="text-align-left">Lưu Thục Quyên</td>
+                        <td class="text-align-left">Nữ</td>
+                        <td class="text-align-center">30/09/2004</td>
+                        <td class="text-align-right">10.000.000</td>
+                    </tr>
+                    <tr>
+                        <td class="text-align-left">LTTN01</td>
+                        <td class="text-align-left">Châu Bùi</td>
+                        <td class="text-align-left">Nữ</td>
+                        <td class="text-align-center">23/10/1994</td>
+                        <td class="text-align-right">100.000.000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="t-table-paging">
+                <div class="t-paging-left">Hiển thị 1-10/100 nhân viên</div>
+                <div class="t-paging-center">
+                    <div class="t-paging-first"></div>
+                    <div class="t-paging-prev"></div>
+                    <div class="t-paging-number">
+                        <div class="page-number page-numer--selected">1</div>
+                        <div class="page-number">2</div>
+                        <div class="page-number">3</div>
+                        <div class="page-number">4</div>
+                    </div>
+                    <div class="t-paging-next"></div>
+                    <div class="t-paging-last"></div>
+                </div>
+                <div class="t-paging-right">
+                    <select class="t-combobox" name="" id="">
+              <option value="10">10 nhân viên trên trang</option>
+              <option value="20">20 nhân viên trên trang</option>
+              <option value="30">30 nhân viên trên trang</option>
+              <option value="40">40 nhân viên trên trang</option>
+            </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="t-row">
+        <label for="" class="t-label">10. Toast Message</label>
+        <button id="btnShowToast" onclick="showToast()" class="t-button" style="margin-bottom: 4px">
+        Show Toast
+      </button>
+        <button id="btnCloseToast" onclick="closeToast()" class="t-button t-button-2nd">
+        Close Toast
+      </button>
+        <div class="t-toast-msg-container">
+            <div class="t-toast-msg">
+                <div class="toast-msg-icon">
+                    <i class="fas fa-exclamation-triangle t-toast-msg-error"></i>
+                </div>
+                <div class="toast-msg-text">Thêm mới thành công</div>
+                <div class="toast-msg-close">
+                    <i class="fas fa-times t-toast-msg-error"></i>
+                </div>
+            </div>
+            <div class="t-toast-msg">
+                <div class="toast-msg-icon">
+                    <i class="fas fa-exclamation-circle t-toast-msg-warn"></i>
+                </div>
+                <div class="toast-msg-text">Thêm mới thành công</div>
+                <div class="toast-msg-close">
+                    <i class="fas fa-times t-toast-msg-warn"></i>
+                </div>
+            </div>
+            <div class="t-toast-msg">
+                <div class="toast-msg-icon">
+                    <i class="fas fa-info-circle t-toast-msg-info"></i>
+                </div>
+                <div class="toast-msg-text">Thêm mới thành công</div>
+                <div class="toast-msg-close">
+                    <i class="fas fa-times t-toast-msg-info"></i>
+                </div>
+            </div>
+            <div class="t-toast-msg">
+                <div class="toast-msg-icon">
+                    <i class="fas fa-check-circle t-toast-msg-success"></i>
+                </div>
+                <div class="toast-msg-text">Thêm mới thành công</div>
+                <div class="toast-msg-close">
+                    <i class="fas fa-times t-toast-msg-success"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="t-row">
+        <label for=" " class="t-label">11. Popup</label>
+        <button id="btnShowPopup " onclick="openDialog()" class="t-button">
+        Show popup
+      </button>
+        <div id="dlgPopup " class="t-popup-modal">
+            <div class="t-popup">
+                <div class="t-popup-header">
+                    <div class="t-popup-header-title">Đóng Form thông tin chung</div>
+                    <div id="btnCloseDialog " onclick="closeDialog()" class="t-popup-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="t-popup-content">
+                    <div class="t-popup-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="t-popup-text">
+                        Bạn có chắc chắn muốn xóa thằng này hay không
+                    </div>
+                </div>
+                <div class="t-popup-footer">
+                    <button id="btnNext " class="t-button t-button-nobackground">
+              Next
+            </button>
+                    <button id="btnClose " class="t-button">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="t-row">
+        <label for="" class="t-label">12. Chip status</label>
+        <div class="t-chip-status-box">
+            <div class="t-chip-status t-chip-status-denied">Bị từ chối</div>
+            <div class="t-chip-status t-chip-status-approved">Đã duyệt</div>
+            <div class="t-chip-status t-chip-status-sent">Đã gửi</div>
+            <div class="t-chip-status t-chip-status-lack">Thiếu thông tin</div>
+            <div class="t-chip-status t-chip-status-unsent">Chưa gửi</div>
+        </div>
+    </div>
+    <!-- Thư viện JS -->
+    <!-- JS dùng chung -->
+    <!-- JS dùng riêng -->
+    <script>
+        var toast = document.getElementsByClassName("t-toast-msg ");
+
+        function openDialog() {
+            document.getElementById("dlgPopup ").style.display = "block ";
+            console.log("click");
+        }
+
+        function closeDialog() {
+            document.getElementById("dlgPopup ").style.display = "none ";
+        }
+
+        function showToast() {
+            document.getElementsByClassName(
+                "t-toast-msg-container "
+            )[0].style.display = "block ";
+            for (const item of toast) {
+                item.style.display = "flex ";
+            }
+        }
+
+        function closeToast() {
+            document.getElementsByClassName(
+                "t-toast-msg-container "
+            )[0].style.display = "none ";
+            for (const item of toast) {
+                item.style.display = "none ";
+            }
+        }
+    </script>
+</body>
+
+</html>

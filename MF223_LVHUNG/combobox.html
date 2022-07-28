@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combobox</title>
+    <link rel="stylesheet" href="./assets/font/fontawesome-5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+    <div style="width: 300px; margin: 30px 50%; transform: translateX(-50%)">
+        <select class="t-combobox" name="" id="">
+                <option value="10">10 nhân viên trên trang</option>
+                <option value="20">20 nhân viên trên trang</option>
+                <option value="30">30 nhân viên trên trang</option>
+                <option value="40">40 nhân viên trên trang</option>
+            </select>
+        <br />
+        <br />
+        <br />
+        <div class="tcombobox">
+            <input type="text" class="t-combobox t-combobox-input" />
+            <button tabindex="-1" class="t-combobox-button">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            <div class="t-combobox-data">
+                <div class="t-combobox-item" value="1">Nam</div>
+                <div class="t-combobox-item" value="0">Nữ</div>
+                <div class="t-combobox-item" value="1">Gay</div>
+                <div class="t-combobox-item" value="0">Les</div>
+                <div class="t-combobox-item" value="1">Trans</div>
+                <div class="t-combobox-item" value="0">Khác</div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./lib/combobox/combobox.js"></script>
+</body>
+
+</html>

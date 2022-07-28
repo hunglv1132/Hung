@@ -1,0 +1,80 @@
+.vh-table-paging {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 56px;
+    margin-top:  640px;
+}
+
+.vh-table-paging .vh-paging-left {
+    width: 200px;
+}
+
+.vh-table-paging .vh-paging-center {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vh-table-paging .vh-paging-right {
+    display: flex;
+    justify-content: right;
+}
+
+.vh-table-paging .vh-paging-first {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../assets/icon/btn-firstpage.svg");
+    background-position: center;
+}
+
+.vh-table-paging .vh-paging-prev {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../assets/icon/btn-prev-page.svg");
+    background-position: center;
+}
+
+.vh-table-paging .vh-paging-number {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+.vh-table-paging .vh-paging-next {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../assets/icon/btn-next-page.svg");
+    background-position: center;
+}
+
+.vh-table-paging .vh-paging-last {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../assets/icon/btn-lastpage.svg");
+    background-position: center;
+}
+
+.vh-table-paging .page-number {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.vh-table-paging .page-number:hover {
+    background-color: #2fbe8e;
+}
+
+.vh-table-paging .page-numer--selected {
+    background-color: #019160;
+    color: #fff;
+}

@@ -1,0 +1,38 @@
+.vh-chip-status-box {
+    display: flex;
+}
+
+.vh-chip-status {
+    height: 32px;
+    font-size: 11px;
+    width: 100px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 32px;
+    margin-left: 16px;
+}
+
+.vh-chip-status-denied {
+    background-color: #ffebeb;
+    color: #f65454;
+}
+
+.vh-chip-status-approved {
+    background-color: #ebf9f4;
+    color: #01b075;
+}
+
+.vh-chip-status-sent {
+    background-color: #ebf4ff;
+    color: #0075ff;
+}
+
+.vh-chip-status-lack {
+    background-color: #fff3eb;
+    color: #ff6900;
+}
+
+.vh-chip-status-unsent {
+    background-color: #e5e5e5;
+    color: #454545;
+}

@@ -1,0 +1,42 @@
+.vh-header {
+    height: 48px;
+    width: calc(100% - 226px);
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #E9EBEE
+}
+
+.vh-place {
+    padding-left: 24px;
+}
+
+.vh-user {
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+    cursor: pointer;
+}
+
+.vh-user .vh-user-avatar {
+    background-image: url("../../assets/icon/avatar-default.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.vh-user .vh-user-more {
+    background-image: url("../../assets/icon/option.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    margin-left: 6px;
+}

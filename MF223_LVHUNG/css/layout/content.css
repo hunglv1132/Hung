@@ -1,0 +1,9 @@
+.vh-content {
+    width: calc(100% - 226px);
+    height: calc(100vh - 48px);
+    float: left;
+    padding: 24px 24px 0 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
