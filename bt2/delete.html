@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel='shortcut icon'
+        href='https://png.pngtree.com/png-vector/20190301/ourlarge/pngtree-vector-administration-icon-png-image_747092.jpg' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>THOLshop</title>
+</head>
+
+<body>
+    <header class="navigation">
+        <div class="header-top">
+            <div class="container">
+                <div class="row justify-content-between align-center">
+                    <div class="col-lg-2 col-md-4">
+                        <div class="header-top-socials text-center text-lg-left text-md-left">
+                            <a href="https://www.facebook.com/Hjn1610" target="_blank"><i
+                                    class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/Hjn1610/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-md-8 text-center text-lg-right text-md-right">
+                        <div class="header-top-info">
+                            <a href="tel:0666888"><i class="fa fa-phone mx-1"></i><span>0948770036</span></a>
+                            <a href="mailto:long@gmail.com"><i
+                                    class="fa fa-envelope mr-2"></i><span>hunglv1132@gmail.com</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg  py-4" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <image class="logo_image" src="./image/logo.png"></image>
+                </a>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarsExample09">
+                    <span class="fa fa-bars"></span>
+
+                </button>
+
+
+                <div class="collapse navbar-collapse text-center" id="navbarsExample09">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link " href="index.html">Trang chủ </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown">Thống
+                                kê</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about.html">Số lượng khách</a></li>
+                                <li><a class="dropdown-item" href="pricing.html">Số tiền khách mua</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="service.html">Bài viết <span
+                                    class="badge bg-secondary">9</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="project.html">Phản hồi khách hàng</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown">Tùy
+                                chọn</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="submit.html">Danh sách khách hàng</a></li>
+                                <li><a class="dropdown-item" href="delete.html">Phân loại khách hàng</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ khách hàng</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index1.html"><i
+                                    class="fa fa-sign-out fa-2x"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <div class="main-wrapper ">
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" aria-current="page">Khách hàng</li>
+                <li class="breadcrumb-item active" aria-current="page">Phản hồi đánh giá</li>
+            </ol>
+        </nav>
+        <div class="container my-3">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="list-group">
+                        <a class="list-group-item  btn-outline-danger">
+                            Phân loại theo nhóm
+                        </a>
+                        <div>
+                            <a href="#potential" data-toggle="collapse" class="list-group-item">Khách hàng tiềm năng</a>
+                            <a href="#negative" class="list-group-item">Khách hàng tiêu cực</a>
+                            <a href="#loyal" class="list-group-item">Khách hàng trung thành</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="list-group">
+                        <a class="list-group-item  btn-outline-warning">
+                            Phân loại theo vùng
+                        </a>
+                        <div>
+                            <a href="#north" data-toggle="collapse" class="list-group-item">Khách hàng miền Bắc</a>
+                            <a href="#middle" class="list-group-item">Khách hàng miền Trung</a>
+                            <a href="#south" class="list-group-item">Khách hàng miền Nam</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="list-group">
+                        <a class="list-group-item  btn-outline-success">
+                            Phân loại theo độ tuổi
+                        </a>
+
+                        <div>
+                            <a href="#young" data-toggle="collapse" class="list-group-item">Từ 15-22 tuổi</a>
+                            <a href="#middle-age" class="list-group-item">Từ 23-40 tuổi</a>
+                            <a href="#old" class="list-group-item">Trên 40 tuổi</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+            </div>
+            <div class="container">
+
+                <div class="collapse" id="potential">
+                    <div class="col text-center my-3">
+                        <h3>Khách hàng tiềm năng</h3>
+                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Họ và tên</th>
+                                <th>Địa chỉ</th>
+                                <th>SĐT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td>Đình Mark</td>
+                                <td>Số 59 + 61 Thợ Nhuộm - Hoàn Kiếm - Hà Nội</td>
+                                <td>(0243) 5380088</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>Duy Mặn</td>
+                                <td>Số 520 Cách Mạng Tháng Tám - Quận 3 - TP. Hồ Chí Minh</td>
+                                <td>(0243) 6285551</td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>Thái Vũ</td>
+                                <td> 406 Tô Hiệu - Lê Chân - Hải Phòng</td>
+                                <td>(024) 38580088</td>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <td>Thái Vũ</td>
+                                <td> 406 Tô Hiệu - Lê Chân - Hải Phòng</td>
+                                <td>(024) 38580088</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="collapse" id="north">
+                    <div class="col text-center my-3">
+                        <h3>Khách hàng miền Bắc</h3>
+                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Họ và tên</th>
+                                <th>Địa chỉ</th>
+                                <th>SĐT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td>Phung Nguyen Thanh Long</td>
+                                <td>Số 59 + 61 Thợ Nhuộm - Hoàn Kiếm - Hà Nội</td>
+                                <td>(0243) 5380088</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>Phung Nguyen Thanh Long</td>
+                                <td>Số 520 Cách Mạng Tháng Tám - Quận 3 - TP. Hải Dương</td>
+                                <td>(0243) 6285551</td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>Phung Nguyen Thanh Long</td>
+                                <td> 406 Tô Hiệu - Lê Chân - Hải Phòng</td>
+                                <td>(024) 38580088</td>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <td>Phung Nguyen Thanh Long</td>
+                                <td> 406 Tô Hiệu - Lê Chân - Hải Phòng</td>
+                                <td>(024) 38580088</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="collapse " id="young">
+                    <div class="col text-center my-3">
+                        <h3>Khách hàng có độ tuổi từ 15-22</h3>
+                    </div>
+                    <div class="row">
+                        <div class="card col-lg-3">
+                            <img src="./image/young1.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title">Junior Nguyễn</h5>
+                                <p class="card-text">Đến từ khu vực bán đảo Iberia</p>
+                                <p>18 tuổi</p>
+                            </div>
+                        </div>
+                        <div class="card col-lg-3">
+                            <img src="./image/young2.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title">Lê Cát Trọng Lú</h5>
+                                <p class="card-text">Đến từ miền Đông nước Anh</p>
+                                <p>19 tuổi</p>
+
+                            </div>
+                        </div>
+                        <div class="card col-lg-3">
+                            <img src="./image/young3.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title">Đình Bia Bờ</h5>
+                                <p class="card-text">Đến từ số 7 hồ Thiền Quang</p>
+                                <p>16 tuổi</p>
+                            </div>
+                        </div>
+                        <div class="card col-lg-3">
+                            <img src="./image/young4.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title">Lê Na Trần</h5>
+                                <p class="card-text">Đến từ Ngõ Huyện Tây Hồ</p>
+                                <p>22 tuổi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col text-center">
+            <a href="submit.html"><button class="btn btn-primary">Xem danh sách khách hàng</button></a>
+        </div>
+
+    </div>
+    <hr class="my-4">
+    <!-- footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div>
+                        <h4 class=" mb-4">Về chúng tôi</h4>
+
+                        <ul class="footer_item list-unstyled ">
+                            <li><a class = "footer_item" href="#">Điều khoản và dịch vụ</a></li>
+                            <li><a class = "footer_item" href="#">thông tin</a></li>
+                            <li><a class = "footer_item" href="#">Hỗ trợ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div>
+                        <h4 class="mb-4">Liên Hệ</h4>
+
+                        <ul class="footer_item list-unstyled">
+                            <li><a class = "footer_item" href="#">Thông tin</a></li>
+                            <li><a class = "footer_item" href="#">Dịch vụ</a></li>
+                            <li><a class = "footer_item" href="#">Đội ngũ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div>
+                        <h4 class="mb-4">Đăng ký với chúng tôi</h4>
+                        <p>Đăng ký để nhận thông tin </p>
+
+                        <form>
+                            <input type="text" class="form-control mb-3" placeholder="Đăng ký ngay ...">
+                            <a href="#" class="btn  btn-small btn-danger">Đăng ký</a>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 ml-auto col-sm-6">
+                    <div>
+                        <a class="navbar-brand" href="index.html">
+                            <image class="logo_image" src="./image/logo.png"></image>
+                        </a><br>
+                        <a href="https://www.facebook.com/pgstsnghiadoan" class="footer_item"><i
+                            class="fa fa-facebook mr-2"></i>Facebook</a><br>
+                        <a href="https://instagram.com/pgs.ts.nghiadoan" class="footer_item"><i
+                            class="fa fa-instagram mr-2"></i>Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center">&copy; Copyright by LVH</p>
+        </div>
+    </footer>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>THOLshop - Phản hồi</title>
+    <link rel='shortcut icon'
+        href='https://png.pngtree.com/png-vector/20190301/ourlarge/pngtree-vector-administration-icon-png-image_747092.jpg' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>THOLshop</title>
+    <script>
+        $(function(){
+    // assign to resize 
+    $(window).resize(set_height);
+});
+
+function set_height() {
+    $('#sidebar').height($(window).height());
+}
+    </script>
+</head>
+
+<body>
+    <header class="navigation">
+        <div class="header-top">
+            <div class="container">
+                <div class="row justify-content-between align-center">
+                    <div class="col-lg-2 col-md-4">
+                        <div class="header-top-socials text-center text-lg-left text-md-left">
+                            <a href="https://www.facebook.com/Hjn1610" target="_blank"><i
+                                    class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/Hjn1610/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-md-8 text-center text-lg-right text-md-right">
+                        <div class="header-top-info">
+                            <a href="tel:0948770036"><i class="fa fa-phone mx-1"></i><span>0948770036</span></a>
+                            <a href="mailto:hunglv1132@gmail.com"><i
+                                    class="fa fa-envelope mr-2"></i><span>hunglv1132@gmail.com</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg  py-0" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <image class="logo_image" src="./image/logo.png"></image>
+                </a>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarsExample09">
+                    <span class="fa fa-bars"></span>
+
+                </button>
+
+
+                <div class="collapse navbar-collapse text-center" id="navbarsExample09">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link " href="index.html">Trang chủ </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown">Thống
+                                kê</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about.html">Số lượng khách</a></li>
+                                <li><a class="dropdown-item" href="pricing.html">Số tiền khách mua</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="service.html">Bài viết <span
+                                    class="badge bg-secondary">9</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="project.html">Phản hồi đánh giá</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown">Tùy
+                                chọn</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="submit.html">Danh sách khách hàng</a></li>
+                                <li><a class="dropdown-item" href="delete.html">Phân loại khách hàng</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ khách hàng</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html"><i
+                                    class="fa fa-sign-out fa-2x"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <div class="main-wrapper ">
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Phản hồi đánh giá</li>
+            </ol>
+        </nav>
+
+
+        <div class="container my-3">
+            <div class="row my-3">
+                <div id = "sidebar" class="col-lg-3 sticky-top list_option_customer ">
+                    <div class="list-group ">
+                        <a class="list-group-item active">Đánh giá của khách</a>
+                        <a class="list-group-item " href="#">Tất cả đánh giá</a>
+                        <a class="list-group-item " href="#">5 sao (50)</a>
+                        <a class="list-group-item " href="#">4 sao (10)</a>
+                        <a class="list-group-item " href="#">3 sao (20)</a>
+                        <a class="list-group-item " href="#">2 sao (5)</a>
+                        <a class="list-group-item " href="#">1 sao (1)</a>
+                    </div>
+                </div>
+                <div class="col-lg-9 ">
+                    <h2 class="text-center">
+                        Tổng hợp đánh giá
+                    </h2>
+                    <div class="card text-center">
+
+                        <div class="card-header">
+                            Trần Thị Cởi
+                        </div>
+                        <div class="card-body">
+                            <span class="card-title"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            <p class="card-text">Shop giao đủ hàng. Uống thử thấy vị hơi chua cũng ok. Tuy nhiên bên
+                                best ẽpress giao hàng lâu quá. Lưu kho lâu không biết sản phẩm có hư không.</p>
+                            <p>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#comment">
+                                    Phản hồi
+                                </a>
+                            </p>
+                            <div class="collapse" id="comment">
+                                <input type="text" class="form-control" placeholder="Nhập phản hồi ..." />
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            15 phút trước
+                        </div>
+                    </div>
+                    <div class="card text-center">
+
+                        <div class="card-header">
+                            Mai Tài Phến
+                        </div>
+                        <div class="card-body">
+                            <span class="card-title"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            <p class="card-text">Shop giao đúng đủ hàng. Chuẩn bị hàng và giao hàng rất nhanh . Đây
+                                là
+                                lần đầu sd loại này. Hi vọng hợp cơ địa sẽ quay lại lần sau. ❤️</p>
+                            <p>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#comment1">
+                                    Phản hồi
+                                </a>
+                            </p>
+                            <div class="collapse" id="comment1">
+                                <input type="text" class="form-control" placeholder="Nhập phản hồi ..." />
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            15 phút trước
+                        </div>
+                    </div>
+                    <div class="card text-center">
+
+                        <div class="card-header">
+                            Tương Tóp Mỡ
+                        </div>
+                        <div class="card-body">
+                            <span class="card-title"><i class="fa fa-star"></i></span>
+                            <p class="card-text">Hàng chính hãng nguyên seal. Đóng gói chắc chắn. Má j&t giao hơi
+                                lâu
+                                hơn 20 ngày từ tphcm đến Tiền Giang.</p>
+                            <p>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#comment2">
+                                    Phản hồi
+                                </a>
+                            </p>
+                            <div class="collapse" id="comment2">
+                                <input type="text" class="form-control" placeholder="Nhập phản hồi ..." />
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            15 phút trước
+                        </div>
+                    </div>
+                    <div class="card text-center">
+
+                        <div class="card-header">
+                            Dương Đình Miếu
+                        </div>
+                        <div class="card-body">
+                            <span class="card-title"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            <p class="card-text">Thời gian giao hàng nhanh. Bọc hơi sơ sài nhưng lót xốp cẩn thận.
+                                Shop
+                                nên sử dụng thêm băng dính niêm phong vì hàng cũng có giá trị cao. Hộp máy nguyên
+                                seal
+                                không móp, méo. Điện thoại sử dụng nhanh,mượt, pin trâu, sạc nhanh.</p>
+                            <p>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#comment3">
+                                    Phản hồi
+                                </a>
+                            </p>
+                            <div class="collapse" id="comment3">
+                                <input type="text" class="form-control" placeholder="Nhập phản hồi ..." />
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            15 phút trước
+                        </div>
+                    </div>
+                    <div class="card text-center">
+
+                        <div class="card-header">
+                            Trần Thị Cởi
+                        </div>
+                        <div class="card-body">
+                            <span class="card-title"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i></span>
+                            <p class="card-text">Shop đóng gói sản phẩm rất tốt 👍, bảo vệ rất cẩn thận. Điện thoại
+                                chất
+                                lượng, chính hãng, bản quốc tế nhé mọi người. Rất uy tín, rất an tâm. Có cơ hội sẽ
+                                ủng
+                                hộ thêm nữa..</p>
+                            <p>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#comment4">
+                                    Phản hồi
+                                </a>
+                            </p>
+                            <div class="collapse" id="comment4">
+                                <input type="text" class="form-control" placeholder="Nhập phản hồi ..." />
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            15 phút trước
+                        </div>
+                    </div>
+                    <div class="card text-center">
+
+                        <div class="card-header">
+                            Trần Thị Cởi
+                        </div>
+                        <div class="card-body">
+                            <span class="card-title"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            <p class="card-text">Ngon ngon . quá ngon, hình ảnh mang tính chất nhận xu. Săn sale đc
+                                giá
+                                ngon, hàng chính hãng</p>
+                            <p>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#comment5">
+                                    Phản hồi
+                                </a>
+                            </p>
+                            <div class="collapse" id="comment5">
+                                <input type="text" class="form-control" placeholder="Nhập phản hồi ..." />
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            15 phút trước
+                        </div>
+                    </div>
+                    <div class="card text-center">
+
+                        <div class="card-header">
+                            Trần Thị Cởi
+                        </div>
+                        <div class="card-body">
+                            <span class="card-title"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            <p class="card-text">Shop giao đủ hàng. Uống thử thấy vị hơi chua cũng ok. Tuy nhiên bên
+                                best ẽpress giao hàng lâu quá. Lưu kho lâu không biết sản phẩm có hư không.</p>
+                            <p>
+                                <a class="btn btn-primary" data-toggle="collapse" href="#comment6">
+                                    Phản hồi
+                                </a>
+                            </p>
+                            <div class="collapse" id="comment6">
+                                <input type="text" class="form-control" placeholder="Nhập phản hồi ..." />
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            15 phút trước
+                        </div>
+                    </div>
+                    <div class="row my-5">
+                        <ul class="pagination text-center">
+                            <li class="page-item "><a class="page-link " href="#">Trước</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class=" my-4">
+        <!-- footer Start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div>
+                            <h4 class=" mb-4">Về chúng tôi</h4>
+
+                            <ul class="footer_item list-unstyled ">
+                                <li><a class = "footer_item" href="#">Điều khoản và dịch vụ</a></li>
+                                <li><a class = "footer_item" href="#">thông tin</a></li>
+                                <li><a class = "footer_item" href="#">Hỗ trợ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div>
+                            <h4 class="mb-4">Liên Hệ</h4>
+
+                            <ul class="footer_item list-unstyled">
+                                <li><a class = "footer_item" href="#">Thông tin</a></li>
+                                <li><a class = "footer_item" href="#">Dịch vụ</a></li>
+                                <li><a class = "footer_item" href="#">Đội ngũ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div>
+                            <h4 class="mb-4">Đăng ký với chúng tôi</h4>
+                            <p>Đăng ký để nhận thông tin </p>
+
+                            <form>
+                                <input type="text" class="form-control mb-3" placeholder="Đăng ký ngay ...">
+                                <a href="#" class="btn  btn-small btn-danger">Đăng ký</a>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 ml-auto col-sm-6">
+                        <div>
+                            <a class="navbar-brand" href="index.html">
+                                <image class="logo_image" src="./image/logo.png"></image>
+                            </a><br>
+                            <a href="https://www.facebook.com/pgstsnghiadoan" class="footer_item"><i
+                                class="fa fa-facebook mr-2"></i>Facebook</a><br>
+                            <a href="https://instagram.com/pgs.ts.nghiadoan" class="footer_item"><i
+                                class="fa fa-instagram mr-2"></i>Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center">&copy; Copyright by LVH</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

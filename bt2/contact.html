@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>THOLshop - Liên hệ</title>
+    <link rel='shortcut icon'
+        href='https://png.pngtree.com/png-vector/20190301/ourlarge/pngtree-vector-administration-icon-png-image_747092.jpg' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>THOLshop</title>
+</head>
+
+<body>
+    <header class="navigation">
+        <div class="header-top">
+            <div class="container">
+                <div class="row justify-content-between align-center">
+                    <div class="col-lg-2 col-md-4">
+                        <div class="header-top-socials text-center text-lg-left text-md-left">
+                            <a href="https://www.facebook.com/Hjn1610" target="_blank"><i
+                                    class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/Hjn1610/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-md-8 text-center text-lg-right text-md-right">
+                        <div class="header-top-info">
+                            <a href="tel:0666888"><i class="fa fa-phone mx-1"></i><span>0948770036</span></a>
+                            <a href="mailto:long@gmail.com"><i
+                                    class="fa fa-envelope mr-2"></i><span>hunglv1132@gmail.com</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg  py-4" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <image class="logo_image" src="./image/logo.png"></image>
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarsExample09">
+                    <span class="fa fa-bars"></span>
+
+                </button>
+
+
+                <div class="collapse navbar-collapse text-center" id="navbarsExample09">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link " href="index.html">Trang chủ </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown">Thống
+                                kê</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about.html">Số lượng khách</a></li>
+                                <li><a class="dropdown-item" href="pricing.html">Số tiền khách mua</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="service.html">Bài viết <span
+                                    class="badge bg-secondary">9</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="project.html">Phản hồi đánh giá</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown">Tùy
+                                chọn</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="submit.html">Danh sách khách hàng</a></li>
+                                <li><a class="dropdown-item" href="delete.html">Phân loại khách hàng</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ khách hàng</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index1.html"><i
+                                    class="fa fa-sign-out fa-2x"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <div class="main-wrapper ">
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Liên hệ khách hàng</li>
+            </ol>
+        </nav>
+        <!-- Contact Form -->
+        <section class="container">
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Liên hệ</h2> <br><br>
+
+            <div class="row">
+                <div class="col-md-9 ">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="name" class="">ID</label>
+                                <input type="text" name="name" class="form-control" placeholder="Nhập ID khách hàng">
+
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="">Email</label>
+                                <input type="text" name="email" class="form-control"
+                                    placeholder="Nhập email khách hàng">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="subject" class="">Chủ đề</label>
+                                <input type="text" name="subject" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row mb-0">
+
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                    <label for="message">Lời nhắn</label>
+                                    <textarea type="text" id="message" name="message" rows="5"
+                                        class="form-control "></textarea>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="text-md-left">
+                        <a class="btn btn-primary">Gửi</a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 text-center mb-0">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fa fa-map-marker fa-2x"></i>
+                            <p>Phạm Ngọc Thạch, Đống Đa, Hà Nội</p>
+                        </li>
+
+                        <li><i class="fa fa-phone fa-2x"></i>
+                            <p>+ 0948770036</p>
+                        </li>
+
+                        <li><i class="fa fa-envelope fa-2x"></i>
+                            <p>hunglv1132@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <hr class="my-4">
+        <!-- footer Start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div>
+                            <h4 class=" mb-4">Về chúng tôi</h4>
+
+                            <ul class="footer_item list-unstyled ">
+                                <li><a class = "footer_item" href="#">Điều khoản và dịch vụ</a></li>
+                                <li><a class = "footer_item" href="#">thông tin</a></li>
+                                <li><a class = "footer_item" href="#">Hỗ trợ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div>
+                            <h4 class="mb-4">Liên Hệ</h4>
+
+                            <ul class="footer_item list-unstyled">
+                                <li><a class = "footer_item" href="#">Thông tin</a></li>
+                                <li><a class = "footer_item" href="#">Dịch vụ</a></li>
+                                <li><a class = "footer_item" href="#">Đội ngũ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div>
+                            <h4 class="mb-4">Đăng ký với chúng tôi</h4>
+                            <p>Đăng ký để nhận thông tin </p>
+
+                            <form>
+                                <input type="text" class="form-control mb-3" placeholder="Đăng ký ngay ...">
+                                <a href="#" class="btn  btn-small btn-danger">Đăng ký</a>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 ml-auto col-sm-6">
+                        <div>
+                            <a class="navbar-brand" href="index.html">
+                                <image class="logo_image" src="./image/logo.png"></image>
+                            </a><br>
+                            <a href="https://www.facebook.com/pgstsnghiadoan" class="footer_item"><i
+                                class="fa fa-facebook mr-2"></i>Facebook</a><br>
+                            <a href="https://instagram.com/pgs.ts.nghiadoan" class="footer_item"><i
+                                class="fa fa-instagram mr-2"></i>Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center">&copy; Copyright by LVH</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
